@@ -5,6 +5,6 @@ require_once 'Controller.php';
 class InicioController extends Controller {
 
     function process() {
-        $this->_view->render(array());
+        $this->_view->render($_POST);
     }
 }

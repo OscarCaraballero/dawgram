@@ -74,6 +74,7 @@ class View {
         return $scripts;
     }
     
+    
     public function setParamsImages(){
         $images = "";
         //$images.= '<link rel="shortcut icon" href="'. $this->layoutParams['ruta_img'] .'favicon.ico">';
