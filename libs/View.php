@@ -22,7 +22,7 @@ class View {
         else
             $this->_controlador = "Inicio";
         
-        $this->title = "Canaryfly";
+        $this->title = "Dawgram";
         $this->header = "view/". "header.php";
         $this->footer = "view/". "footer.php";
         
@@ -69,29 +69,25 @@ class View {
     // una string con la ruta de ese único campo.
     public function setParamsScripts(){
         $scripts = "";
-        $scripts.= '<script src="'. $this->layoutParams['ruta_js'] .'jquery-1.8.3.min.js"></script>';
+        $scripts.= '<script src="'. $this->layoutParams['ruta_js'] .'jquery.js"></script>';
         $scripts.= '<script src="'. $this->layoutParams['ruta_js'] .'jquery-ui.min.js"></script>';
-        $scripts.= '<script src="'. $this->layoutParams['ruta_js'] .'jquery.dataTables.min.js"></script>';
-        $scripts.= '<script src="'. $this->layoutParams['ruta_js'] .'chosen.jquery.min.js"></script>';
-        $scripts.= '<script src="'. $this->layoutParams['ruta_js'] .'chosen.proto.min.js"></script>';
         return $scripts;
     }
     
     public function setParamsImages(){
         $images = "";
-        $images.= '<link rel="shortcut icon" href="'. $this->layoutParams['ruta_img'] .'favicon.ico">';
+        //$images.= '<link rel="shortcut icon" href="'. $this->layoutParams['ruta_img'] .'favicon.ico">';
         return $images;
     }
     
     public function setParamsCss(){
         $css = "";
-        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'unsemantic.css">';
-        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'jquery.dataTables.min.css">';
-        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'jquery-ui.min.css">';
         $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'style_admin.css">';
-        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'reset.css">';
-        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'style.css">';
-        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'chosen.min.css">';
+        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'jquery-ui.min.css">';
+        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'jquery-ui.structure.css">';
+        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'jquery-ui.theme.css">';
+//        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'reset.css">';
+//        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'style.css">';
         return $css;
     }
 }
