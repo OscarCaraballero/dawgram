@@ -1,6 +1,6 @@
 <div data-url="demo-page" data-role="page" id="demo-page">
     <div data-role="header">
-        <h1>Bikes</h1>
+        <h1>Dawgram</h1>
         <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
     </div><!-- /header -->
     <div role="main" class="ui-content">

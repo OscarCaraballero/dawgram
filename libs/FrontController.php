@@ -3,6 +3,8 @@
 ini_set('session.gc_maxlifetime', 7200);
 session_set_cookie_params('7200');
 session_start();
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
 class FrontController {
 
@@ -10,18 +12,9 @@ class FrontController {
         require_once 'libs/Config.php';
         require_once 'libs/conf.php';
         
-        var_dump($_SERVER["REQUEST_URI"]);
-        echo "<br>";
-        
         $uri = explode('/', $_SERVER["REQUEST_URI"]);
         
-        var_dump($uri);
-        echo "<br>";
-
         $uri = array_pop($uri);
-        
-        var_dump($uri);
-        echo "<br>";
         
         if (!empty($uri)){
             $controllerName = $uri . 'Controller';

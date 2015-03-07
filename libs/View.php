@@ -69,8 +69,8 @@ class View {
     // una string con la ruta de ese único campo.
     public function setParamsScripts(){
         $scripts = "";
-        $scripts.= '<script src="'. $this->layoutParams['ruta_js'] .'jquery.js"></script>';
-        $scripts.= '<script src="'. $this->layoutParams['ruta_js'] .'jquery-ui.min.js"></script>';
+        $scripts.= '<script src="'. $this->layoutParams['ruta_js'] .'jquery-1.11.1.min.js"></script>';
+        $scripts.= '<script src="'. $this->layoutParams['ruta_js'] .'jquery.mobile-1.4.5.min.js"></script>';
         return $scripts;
     }
     
@@ -82,9 +82,9 @@ class View {
     
     public function setParamsCss(){
         $css = "";
-        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'jquery-ui.min.css">';
-        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'jquery-ui.structure.css">';
-        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'jquery-ui.theme.css">';
+        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'dawgram.min.css">';
+        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'jquery.mobile.icons.min.css">';
+        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'jquery.mobile.structure-1.4.5.min.css">';
 //        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'reset.css">';
 //        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'style.css">';
         return $css;
