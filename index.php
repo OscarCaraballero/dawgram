@@ -1,6 +1,7 @@
 <?php
 //phpinfo();
-define("RUTA",dirname(__FILE__));
+var_dump(__FILE__);
+//define("RUTA",__FILE__);
 
 //Incluimos el FrontController
 require_once 'libs/FrontController.php';
