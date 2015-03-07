@@ -82,7 +82,6 @@ class View {
     
     public function setParamsCss(){
         $css = "";
-        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'style_admin.css">';
         $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'jquery-ui.min.css">';
         $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'jquery-ui.structure.css">';
         $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'jquery-ui.theme.css">';

@@ -10,12 +10,22 @@ class FrontController {
         require_once 'libs/Config.php';
         require_once 'libs/conf.php';
         
+        var_dump($_SERVER["REQUEST_URI"]);
+        echo "<br>";
+        
         $uri = explode('/', $_SERVER["REQUEST_URI"]);
+        
+        var_dump($uri);
+        echo "<br>";
+
         $uri = array_pop($uri);
         
-        if (!empty($uri))
+        var_dump($uri);
+        echo "<br>";
+        
+        if (!empty($uri)){
             $controllerName = $uri . 'Controller';
-        else
+        }else
             $controllerName = "InitController";
         
         

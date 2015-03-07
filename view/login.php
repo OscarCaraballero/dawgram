@@ -1,3 +1,2 @@
-<?php 
+<a href="Inicio">Hola</a>
 
-echo "Hola cara de cola";
