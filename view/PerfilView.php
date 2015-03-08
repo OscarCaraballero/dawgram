@@ -36,6 +36,18 @@
     </div>
 </div>
 
+<div class="grid-100 mobile-grid-100 ui-grid-b">
+    <div class="ui-block-a"><div class="ui-bar ui-bar-a"><img class="fotoperfil" src="view/images/jesua.png"/></div></div>
+    <div class="ui-block-b"><div class="ui-bar ui-bar-b"><img class="fotoperfil" src="view/images/jesua.png"/></div></div>
+    <div class="ui-block-c"><div class="ui-bar ui-bar-c"><img class="fotoperfil" src="view/images/jesua.png"/></div></div>
+    <div class="ui-block-a"><div class="ui-bar ui-bar-a"><img class="fotoperfil" src="view/images/jesua.png"/></div></div>
+    <div class="ui-block-b"><div class="ui-bar ui-bar-b"><img class="fotoperfil" src="view/images/jesua.png"/></div></div>
+    <div class="ui-block-c"><div class="ui-bar ui-bar-c"><img class="fotoperfil" src="view/images/jesua.png"/></div></div>
+    <div class="ui-block-a"><div class="ui-bar ui-bar-a"><img class="fotoperfil" src="view/images/jesua.png"/></div></div>
+    <div class="ui-block-b"><div class="ui-bar ui-bar-b"><img class="fotoperfil" src="view/images/jesua.png"/></div></div>
+    <div class="ui-block-c"><div class="ui-bar ui-bar-c"><img class="fotoperfil" src="view/images/jesua.png"/></div></div>
+</div><!-- /grid-c -->
+
 <script>
     var iable2 = "<a href=\"Inicio\" class=\"perfil ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext\">Menu</a>";
     $("#header").append(iable2);
