@@ -1,3 +1,38 @@
 #header a{
     margin-left: 90%;
 }
+
+.perfil {
+    font-size: 1em;
+    min-height: 1.1em;
+    margin: 0 1%;
+    padding: .7em 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    outline: 0!important;
+}
+
+.fotoperfil{
+    width: 100%;
+    border-radius:50%;
+    margin-top: 15px;
+}
+
+.nombreperfil{
+    font-size: 100%;
+}
+
+.tablaperfil{
+    width: 100%;
+    margin-top: 15px;
+}
+
+.tablaperfil tr td{
+    text-align: center;
+}
+
+.menuperfil{
+    border-style:solid;
+    border-color: gainsboro;
+}

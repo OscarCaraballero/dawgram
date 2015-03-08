@@ -1,11 +1,44 @@
-<h1>HELLO OSCAR PUTA</h1>
+<div class="mobile-grid-100 grid-100">
+    <div class="mobile-grid-30 grid-30">
+        <img class="fotoperfil" src="view/images/jesua.png"/>
+        <h1 class="nombreperfil"><?php echo("NombrePerfil") ?></h1>
+    </div>
+    <div class="mobile-grid-70 grid-70">
+        <table class="tablaperfil">
+            <tr>
+              <td><?php echo("<b>1</b>") ?></td>
+              <td><?php echo("<b>5</b>") ?></td>
+              <td><?php echo("<b>10</b>") ?></td>
+            </tr>
+            <tr>
+              <td>publicaciones</td>
+              <td>seguidores</td>
+              <td>seguidos</td>
+            </tr>
+        </table>
+        <a href="#" class="ui-btn ui-mini">EDITAR TU PERFIL</a>
+    </div>
+</div>
 
+<div class="menuperfil mobile-grid-100 grid-100">
+    <div class="mobile-grid-25 grid-25">
+        <a href="#" class="ui-btn ui-icon-grid ui-btn-icon-notext">No text</a>
+        
+    </div>
+    <div class="mobile-grid-25 grid-25">
+        <a href="#" class="ui-btn ui-icon-bars ui-btn-icon-notext">No text</a>
+    </div>
+    <div class="mobile-grid-25 grid-25">
+        <a href="#" class="ui-btn ui-icon-location ui-btn-icon-notext">No text</a>
+    </div>
+    <div class="mobile-grid-25 grid-25">
+        <a href="#" class="ui-btn ui-icon-user ui-btn-icon-notext">No text</a>
+    </div>
+</div>
 
 <script>
-    //$( document ).on("load",function() {
-    //var iable = "<a href=\"#\" class=\"ui-btn \"></a>";
-    var iable2 = "<a href=\"Inicio\" class=\"ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext\">Menu</a>";
-    //$("#header").append(iable);
-    $("#header").append(iable2);    
-    //});
+    var iable2 = "<a href=\"Inicio\" class=\"perfil ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext\">Menu</a>";
+    $("#header").append(iable2);
+    $("#header h1").css("margin", "0 2%");
+    $("#header h1").css("text-align", "left");
 </script>
