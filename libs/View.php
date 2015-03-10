@@ -87,7 +87,9 @@ class View {
         $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'jquery.mobile.icons.min.css">';
         $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'style.css">';
         $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'jquery.mobile.structure-1.4.5.min.css">';
+        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'PerfilStyle.css">';
         $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'unsemantic.css">';
+        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'unsemantic-grid-mobile.css">';
 //        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'reset.css">';
 //        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'style.css">';
         return $css;

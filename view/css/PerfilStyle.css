@@ -1,0 +1,12 @@
+
+/* 3rd breakpoint - Bump up font size at very wide screens */
+@media all and (min-width: 15em) {
+    .rwd-example .ui-block-a{
+      float: left;
+      width: 25%;
+    }
+    .rwd-example .ui-block-b{
+      float: left;
+      width: 75%;
+    }
+}

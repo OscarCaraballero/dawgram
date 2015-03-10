@@ -15,7 +15,6 @@
 
 .fotoperfil{
     width: 100%;
-    border-radius:50%;
     margin-top: 15px;
 }
 
@@ -23,10 +22,6 @@
     font-size: 100%;
 }
 
-.tablaperfil{
-    width: 100%;
-    margin-top: 15px;
-}
 
 .tablaperfil tr td{
     text-align: center;
@@ -35,4 +30,22 @@
 .menuperfil{
     border-style:solid;
     border-color: gainsboro;
+    padding: 0px;
+    text-align: center;
+}
+
+.pictures{
+    padding: 0px !important;
+}
+
+.numbers{
+    text-align: center;
+}
+
+.stats{
+    margin-top: 15px;
+}
+
+.iconos{
+    margin-left: 50% !important;
 }
