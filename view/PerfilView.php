@@ -1,4 +1,6 @@
-<?php $data = $data[0];?>
+<?php $data = $data[0];
+ //var_dump($data);
+?>
 
 <div class="grid-100 mobile-grid-100">
     <div class="grid-25 mobile-grid-25">
@@ -62,7 +64,12 @@
                for($i=0;$i<$grid;$i++){
                    if(($images+$i)<$longitud){
                         $pinta = "<div class=\"grid-33 mobile-grid-33\">"
-                                . "<img class=\"fotoperfil\" src=\"{$data[$images+$i]['pathThumb']}\"/>"
+                                . "<form data-ajax=\"false\" action=\"Show\" method=\"post\">"
+                                . "<input type=\"hidden\" name=\"id\" value=\"{$data[$images+$i]['id']}\"  />"
+                                . "<input type=\"hidden\" name=\"idUser\" value=\"{$data[$images+$i]['idUser']}\"  />"
+                                . "<input class=\"fotoperfil\" type=\"image\" src=\"{$data[$images+$i]['pathThumb']}\" alt=\"Submit Form\" />"
+//                                . "<img class=\"fotoperfil\" src=\"{$data[$images+$i]['pathThumb']}\"/>"
+                                . "</form>"
                                 . "</div>";
 
                         echo $pinta;
