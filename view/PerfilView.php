@@ -1,27 +1,50 @@
-<div class="mobile-grid-100">
+<div class="grid-100 mobile-grid-100">
 
-    <div class="mobile-grid-25">
+    <div class="grid-25 mobile-grid-25">
         <img class="fotoperfil" src="view/images/profile.jpg"/>
+<?php
+ 
+/*
+	A simple example demonstrate thumbnail creation.
+*/ 
+ 
+/* Create the Imagick object */
+$im = new Imagick();
+ 
+/* Read the image file */
+$im->readImage( 'view/images/profile.jpg' );
+ 
+/* Thumbnail the image ( width 100, preserve dimensions ) */
+$im->thumbnailImage( 100, null );
+ 
+/* Write the thumbail to disk */
+$im->writeImage( 'view/images/thumbnail/profile.jpg' );
+ 
+
+/* Free resources associated to the Imagick object */
+/*$im->destroy();*/
+ 
+?><img class="" src="view/images/thumbnail/profile.jpg"/>
         <h1 class="nombreperfil"><?php echo("NombrePerfil") ?></h1>
     </div>
-    <div class="stats mobile-grid-75">
-        <div class="mobile-grid-100">
+    <div class="stats grid-75 mobile-grid-75">
+        <div class="grid-100 mobile-grid-100">
             <a href="#thubnails">
-                <div class="numbers mobile-grid-33">
+                <div class="numbers grid-33 mobile-grid-33">
                     <?php echo("<b>1</b>") ?>
                     <p>publicaciones</p>
                 </div>
             </a>
-            <div class="numbers mobile-grid-33">
+            <div class="numbers grid-33 mobile-grid-33">
                 <?php echo("<b>5</b>") ?>
                 <p>seguidores</p>
             </div>
-            <div class="numbers mobile-grid-33">
+            <div class="numbersgrid-33 mobile-grid-33">
                 <?php echo("<b>10</b>") ?>
                 <p>seguidos</p>
             </div>
         </div>
-        <div class="mobile-grid-100">
+        <div class="grid-100 mobile-grid-100">
             <a href="#" class="ui-btn ui-mini">EDITAR TU PERFIL</a>
         </div>
     </div>
@@ -42,37 +65,37 @@
             <a href="#" class="iconos ui-btn ui-icon-user ui-btn-icon-notext">No text</a>
         </div>
     </div>
-    <div id="thubnails" class=" mobile-grid-100">
-        <div class="mobile-grid-100">
-            <div class="grid-33">
+    <div id="thubnails" class="grid-100 mobile-grid-100">
+        <div class="grid-100 mobile-grid-100">
+            <div class="grid-33 mobile-grid-33">
                 <img class="fotoperfil" src="view/images/angie3.jpg"/>
             </div>
-            <div class="grid-33">
+            <div class="grid-33 mobile-grid-33">
                 <img class="fotoperfil" src="view/images/angie.jpg"/>
             </div>
-            <div class="grid-33">
+            <div class="grid-33 mobile-grid-33">
                 <img class="fotoperfil" src="view/images/angie2.jpg"/>
             </div>
         </div>
-        <div class="mobile-grid-100">
-            <div class="grid-33">
+        <div class="mobile-grid-100 grid-100">
+            <div class="grid-33 mobile-grid-33">
                 <img class="fotoperfil" src="view/images/angie4.jpg"/>
             </div>
-            <div class="grid-33">
+            <div class="grid-33 mobile-grid-33">
                 <img class="fotoperfil" src="view/images/angie5.jpg"/>
             </div>
-            <div class="grid-33">
+            <div class="grid-33 mobile-grid-33">
                 <img class="fotoperfil" src="view/images/angie6.jpg"/>
             </div>
         </div>
-        <div class="mobile-grid-100">
-            <div class="grid-33">
+        <div class="mobile-grid-100 grid-100">
+            <div class="grid-33 mobile-grid-33">
                 <img class="fotoperfil" src="view/images/angie3.jpg"/>
             </div>
-            <div class="grid-33">
+            <div class="grid-33 mobile-grid-33">
                 <img class="fotoperfil" src="view/images/angie.jpg"/>
             </div>
-            <div class="grid-33">
+            <div class="grid-33 mobile-grid-33">
                 <img class="fotoperfil" src="view/images/angie2.jpg"/>
             </div>
         </div>

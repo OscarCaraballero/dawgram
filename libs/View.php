@@ -37,6 +37,7 @@ class View {
         echo self::setParamsCss();
         echo self::setParamsScripts();
         echo self::setParamsImages();
+        echo self::setParamsMeta();
         $rutaVista = 'view/' . $this->_controlador . 'View' . '.php';
         if (is_readable($rutaVista)){
             require_once $this->header;
@@ -93,5 +94,13 @@ class View {
 //        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'reset.css">';
 //        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'style.css">';
         return $css;
+    }
+    
+    public function setParamsMeta(){
+        //$meta = "";
+        //$meta = '<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />';
+        $meta = '<meta name="viewport" content="width=device-width, initial-scale=1">';
+        $meta .= '<meta charset="UTF-8">';
+        return $meta;
     }
 }
