@@ -1,30 +1,8 @@
+<?php $data = $data[0];?>
+
 <div class="grid-100 mobile-grid-100">
-
     <div class="grid-25 mobile-grid-25">
-        <img class="fotoperfil" src="view/images/profile.jpg"/>
-<?php
- 
-/*
-	A simple example demonstrate thumbnail creation.
-*/ 
- 
-/* Create the Imagick object */
-$im = new Imagick();
- 
-/* Read the image file */
-$im->readImage( 'view/images/profile.jpg' );
- 
-/* Thumbnail the image ( width 100, preserve dimensions ) */
-$im->thumbnailImage( 100, null );
- 
-/* Write the thumbail to disk */
-$im->writeImage( 'view/images/thumbnail/profile.jpg' );
- 
-
-/* Free resources associated to the Imagick object */
-/*$im->destroy();*/
- 
-?><img class="" src="view/images/thumbnail/profile.jpg"/>
+        <img class="fotoperfil" src="view/images/thumbnail/profile.jpg"/>
         <h1 class="nombreperfil"><?php echo("NombrePerfil") ?></h1>
     </div>
     <div class="stats grid-75 mobile-grid-75">
@@ -66,42 +44,35 @@ $im->writeImage( 'view/images/thumbnail/profile.jpg' );
         </div>
     </div>
     <div id="thubnails" class="grid-100 mobile-grid-100">
-        <div class="grid-100 mobile-grid-100">
-            <div class="grid-33 mobile-grid-33">
-                <img class="fotoperfil" src="view/images/angie3.jpg"/>
-            </div>
-            <div class="grid-33 mobile-grid-33">
-                <img class="fotoperfil" src="view/images/angie.jpg"/>
-            </div>
-            <div class="grid-33 mobile-grid-33">
-                <img class="fotoperfil" src="view/images/angie2.jpg"/>
-            </div>
-        </div>
-        <div class="mobile-grid-100 grid-100">
-            <div class="grid-33 mobile-grid-33">
-                <img class="fotoperfil" src="view/images/angie4.jpg"/>
-            </div>
-            <div class="grid-33 mobile-grid-33">
-                <img class="fotoperfil" src="view/images/angie5.jpg"/>
-            </div>
-            <div class="grid-33 mobile-grid-33">
-                <img class="fotoperfil" src="view/images/angie6.jpg"/>
-            </div>
-        </div>
-        <div class="mobile-grid-100 grid-100">
-            <div class="grid-33 mobile-grid-33">
-                <img class="fotoperfil" src="view/images/angie3.jpg"/>
-            </div>
-            <div class="grid-33 mobile-grid-33">
-                <img class="fotoperfil" src="view/images/angie.jpg"/>
-            </div>
-            <div class="grid-33 mobile-grid-33">
-                <img class="fotoperfil" src="view/images/angie2.jpg"/>
-            </div>
-        </div>
-    </div>
+        
+        <?php 
+           $longitud = count($data);
+           $grid = count($data)/3;
+           $grid = (Int)  round($grid);
+           
+//           foreach($data as $array){
+//               var_dump($array);
+//               echo "<br>";
+//               echo "<br>";
+//               echo "<br>";
+//           }
+           
+           for($images=0;$images<$longitud;$images=$images+3){
+               echo "<div class=\"grid-100 mobile-grid-100\">";
+               for($i=0;$i<$grid;$i++){
+                   if(($images+$i)<$longitud){
+                        $pinta = "<div class=\"grid-33 mobile-grid-33\">"
+                                . "<img class=\"fotoperfil\" src=\"{$data[$images+$i]['pathThumb']}\"/>"
+                                . "</div>";
 
-</div>
+                        echo $pinta;
+                       
+                   }
+               }
+               echo "</div>";
+           }
+        
+        ?>
 
 <script>
     var iable2 = "<a href=\"Inicio\" class=\"perfil ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext\">Menu</a>";
