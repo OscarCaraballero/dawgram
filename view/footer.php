@@ -15,6 +15,7 @@
         </div><!-- /navbar -->
     </div><!-- /footer -->
 </div>
+
 <script>
     $("#fileToUpload").change(function () {
         $("#shot").submit();

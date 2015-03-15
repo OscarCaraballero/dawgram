@@ -34,6 +34,7 @@ class View {
     }
     
     public function render($data = array()){ 
+        echo '<html manifest="manifest.appcache">';
         echo self::setParamsCss();
         echo self::setParamsScripts();
         echo self::setParamsImages();

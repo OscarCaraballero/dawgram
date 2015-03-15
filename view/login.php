@@ -1,3 +1,4 @@
+<html manifest="manifest.appcache">
 <head>
     <base href="http://localhost/Dawgram/Inicio">
     <link rel="stylesheet" type="text/css" href="view/css/unsemantic-grid-mobile.css">
