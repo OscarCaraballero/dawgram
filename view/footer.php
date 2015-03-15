@@ -5,7 +5,7 @@
                 <li><a data-ajax="false" href="Inicio" data-icon="home"></a></li>
                 <li><a href="#" data-icon="search"></a></li>
                 <li>
-                    <form id="shot" data-ajax="false" action ="Prueba" method="post" enctype="multipart/form-data">
+                    <form id="shot" data-ajax="false" action ="Upload" method="post" enctype="multipart/form-data">
                         <input name="fileToUpload" id="fileToUpload" type="file" accept="image/*" capture="camera">
                     </form>
                 </li>

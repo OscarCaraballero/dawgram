@@ -3,7 +3,7 @@
 require_once('Controller.php');
 require_once('db/medoo.min.php');
 
-class PruebaController extends Controller {
+class UploadController extends Controller {
 
     function process() {
         $bbdd = new medoo();
