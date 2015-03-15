@@ -17,7 +17,7 @@ if (isset($_SESSION['msg'])) {
     }
 }
 ?>
-<html>
+<html manifest="manifest.appcache">
     <head>
         <meta charset="utf-8">
         <base href="http://localhost/Dawgram/Inicio">
