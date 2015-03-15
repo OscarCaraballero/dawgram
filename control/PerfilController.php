@@ -6,11 +6,11 @@ require_once 'db/medoo.min.php';
 class PerfilController extends Controller {
 
     function process() {
-        
         $bbdd = new medoo();
         $images = $bbdd->select("images", "*",[
-            "idUser" => 1
+            "idUser" => $_SESSION['id']
         ]);
+        //var_dump($images);
         $this->_view->render(array($images));
     }
 }

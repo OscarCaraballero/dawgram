@@ -1,16 +1,22 @@
 <?php
 
 require_once('Controller.php');
+require_once('db/medoo.min.php');
 
 class PruebaController extends Controller {
 
     function process() {
+        $bbdd = new medoo();
         $target_dir = "view/images/";
-        $target_file = $target_dir . rand() .basename($_FILES["fileToUpload"]["name"]);
-        
+        $target_thub = "view/images/thumbnail/";
+        $rand = rand();
+        $target_file = $target_dir . $rand .basename($_FILES["fileToUpload"]["name"]);
+        $target_thub_file = $target_thub . $rand .basename($_FILES["fileToUpload"]["name"]);
+        $thub = new Imagick($_FILES["fileToUpload"]["tmp_name"]);
         $img = new Imagick($_FILES["fileToUpload"]["tmp_name"]);
         
         $img->thumbnailImage(206, 206);
+        $thub->thumbnailImage(80, 80);
         
 //        $img->writeimage($target_file);
         
@@ -50,6 +56,13 @@ class PruebaController extends Controller {
 // if everything is ok, try to upload file
         } else {
             if ($img->writeimage($target_file)) {
+                $img->writeimage($target_thub_file);
+                
+                $bbdd->insert("images", [
+                    "idUser" => $_SESSION['id'],
+                    "path" => $target_file,
+                    "pathThumb" => $target_thub_file
+                ]);
                 $this->_view->render($target_file);
             } else {
                 echo "Sorry, there was an error uploading your file.";

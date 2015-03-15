@@ -5,7 +5,7 @@
 <div class="grid-100 mobile-grid-100">
     <div class="grid-25 mobile-grid-25">
         <img class="fotoperfil" src="view/images/thumbnail/profile.jpg"/>
-        <h1 class="nombreperfil"><?php echo("NombrePerfil") ?></h1>
+        <h1 class="nombreperfil"><?php echo($_SESSION['user']) ?></h1>
     </div>
     <div class="stats grid-75 mobile-grid-75">
         <div class="grid-100 mobile-grid-100">
@@ -51,17 +51,11 @@
            $longitud = count($data);
            $grid = count($data)/3;
            $grid = (Int)  round($grid);
-           
-//           foreach($data as $array){
-//               var_dump($array);
-//               echo "<br>";
-//               echo "<br>";
-//               echo "<br>";
-//           }
+           if ($grid == '0') $grid = 1;
            
            for($images=0;$images<$longitud;$images=$images+3){
                echo "<div class=\"grid-100 mobile-grid-100\">";
-               for($i=0;$i<$grid;$i++){
+               for($i=0;$i<3;$i++){
                    if(($images+$i)<$longitud){
                         $pinta = "<div class=\"grid-33 mobile-grid-33\">"
                                 . "<form data-ajax=\"false\" action=\"Show\" method=\"post\">"
