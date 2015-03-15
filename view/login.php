@@ -4,8 +4,6 @@
 //    session_destroy();
 //}
 
-echo "Hola";
-
 if (isset($_SESSION['msg'])) {
     echo "Hola";
     if (!is_null($_SESSION['msg'])) {
