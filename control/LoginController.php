@@ -22,7 +22,7 @@ class LoginController extends Controller{
                     "usuario" => $user,
                     "password" => $pass
                 ])){
-                    $_SESSION['user'] = $user;
+                    $_SESSION['username'] = $user;
                     $_SESSION['id'] = $id;
                     $_SESSION['filter'] = array();
                     $_SESSION['count'] = 0;
@@ -37,7 +37,7 @@ class LoginController extends Controller{
 
             $query = "select * from users where email = '{$email}' and password = '{$pass}';";
             if($user = $bbdd->query($query)->fetchAll()){
-                $_SESSION['user'] = $user[0]['usuario'];
+                $_SESSION['username'] = $user[0]['usuario'];
                 $_SESSION['id'] = $user[0]['id'];
                 $_SESSION['filter'] = array();
                 $_SESSION['count'] = 0;

@@ -3,7 +3,7 @@
     //var_dump($_SERVER['REQUEST_URI']);
     switch ($_SERVER['REQUEST_URI']) {
         case '/Dawgram/Perfil':
-            echo "<h1>{$_SESSION['user']}</h1>";
+            echo "<h1>{$_SESSION['username']}</h1>";
             break;
         case '/Dawgram/Inicio':
             echo "<h1>Dawgram</h1>";
