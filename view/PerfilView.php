@@ -12,7 +12,7 @@ $data = array_reverse($data);
         <div class="grid-100 mobile-grid-100">
             <a href="#thubnails">
                 <div class="numbers grid-33 mobile-grid-33">
-                    <?php echo("<b>1</b>") ?>
+                    <?php echo(count($data)) ?>
                     <p>publicaciones</p>
                 </div>
             </a>
