@@ -4,7 +4,7 @@
 
 <div class="grid-100 mobile-grid-100">
     <div class="grid-25 mobile-grid-25">
-        <img class="fotoperfil" src="view/images/thumbnail/profile.jpg"/>
+        <img class="fotoperfil" src="view/img/thumbnail/profile.png"/>
         <h1 class="nombreperfil"><?php echo($_SESSION['user']) ?></h1>
     </div>
     <div class="stats grid-75 mobile-grid-75">
@@ -76,7 +76,7 @@
         ?>
 
 <script>
-    var iable2 = "<a href=\"Inicio\" class=\"perfil ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext\">Menu</a>";
+    var iable2 = "<a href=\"Logout\" data-ajax=\"false\" class=\"perfil ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext\">Menu</a>";
     $("#header").append(iable2);
     $("#header h1").css("margin", "0 2%");
     $("#header h1").css("text-align", "left");

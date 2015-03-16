@@ -7,8 +7,8 @@ class UploadController extends Controller {
 
     function process() {
         $bbdd = new medoo();
-        $target_dir = "view/images/";
-        $target_thub = "view/images/thumbnail/";
+        $target_dir = "view/img/";
+        $target_thub = "view/img/thumbnail/";
         $rand = rand();
         $target_file = $target_dir . $rand .basename($_FILES["fileToUpload"]["name"]);
         $target_thub_file = $target_thub . $rand .basename($_FILES["fileToUpload"]["name"]);
