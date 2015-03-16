@@ -1,4 +1,5 @@
 <?php $data = $data[0];
+$data = array_reverse($data);
  //var_dump($data);
 ?>
 
@@ -61,7 +62,7 @@
                                 . "<form data-ajax=\"false\" action=\"Show\" method=\"post\">"
                                 . "<input type=\"hidden\" name=\"id\" value=\"{$data[$images+$i]['id']}\"  />"
                                 . "<input type=\"hidden\" name=\"idUser\" value=\"{$data[$images+$i]['idUser']}\"  />"
-                                . "<input class=\"fotoperfil\" type=\"image\" src=\"{$data[$images+$i]['pathThumb']}\" alt=\"Submit Form\" />"
+                                . "<input class=\"fotoperfil\" type=\"image\" src=\"{$data[$images+$i]['pathThumb']}\" />"
 //                                . "<img class=\"fotoperfil\" src=\"{$data[$images+$i]['pathThumb']}\"/>"
                                 . "</form>"
                                 . "</div>";

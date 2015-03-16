@@ -15,6 +15,7 @@ class ShowController extends Controller{
         $image = $bbdd->select("images", "path",[
            "id" => $_POST['id'] 
         ]);
+        $_SESSION['idFoto'] = $_POST['id'];
         
 //        var_dump($bbdd->last_query());
 //        die();
