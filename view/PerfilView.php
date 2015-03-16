@@ -5,7 +5,7 @@
 <div class="grid-100 mobile-grid-100">
     <div class="grid-25 mobile-grid-25">
         <img class="fotoperfil" src="view/img/thumbnail/profile.png"/>
-        <h1 class="nombreperfil"><?php echo($_SESSION['user']) ?></h1>
+        <h1 class="nombreperfil"><?php echo($_SESSION['username']) ?></h1>
     </div>
     <div class="stats grid-75 mobile-grid-75">
         <div class="grid-100 mobile-grid-100">
