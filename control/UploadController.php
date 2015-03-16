@@ -56,7 +56,7 @@ class UploadController extends Controller {
 // if everything is ok, try to upload file
         } else {
             if ($img->writeimage($target_file)) {
-                $img->writeimage($target_thub_file);
+                $thub->writeimage($target_thub_file);
                 
                 $bbdd->insert("images", [
                     "idUser" => $_SESSION['id'],
