@@ -18,7 +18,11 @@ if (isset($_SESSION['msg'])) {
 <html manifest="manifest.appcache">
     <head>
         <meta charset="utf-8">
-        <base href="http://localhost/Dawgram/Inicio">
+        <!--<base href="http://localhost/Dawgram/Inicio">
+        -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <base href="http://192.168.1.37/Dawgram/">
         <link rel="stylesheet" type="text/css" href="view/css/unsemantic-grid-mobile.css">
         <link rel="stylesheet" type="text/css" href="view/css/dawgram.min.css">
         <link rel="stylesheet" type="text/css" href="view/css/jquery.mobile.icons.min.css">
