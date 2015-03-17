@@ -22,7 +22,7 @@ if (isset($_SESSION['msg'])) {
         -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
-        <base href="http://10.22.143.225/Dawgram/">
+        <!--<base href="http://10.22.143.225/Dawgram/">-->
         <link rel="stylesheet" type="text/css" href="view/css/unsemantic-grid-mobile.css">
         <link rel="stylesheet" type="text/css" href="view/css/dawgram.min.css">
         <link rel="stylesheet" type="text/css" href="view/css/jquery.mobile.icons.min.css">
@@ -94,3 +94,15 @@ if (isset($_SESSION['msg'])) {
             </form>
         </div><!-- /panel -->
 </html>
+<script>
+    $(document).ready(function () {
+        var user = localStorage.getItem('user');
+        var id = localStorage.getItem('id');
+        if(user){
+           var posting = $.post('control/ajax/sesion.php',{username:user,id:id});
+           posting.done(function(data){
+               window.location.href = "Inicio";
+           });
+        }
+    });
+</script>
