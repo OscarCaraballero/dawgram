@@ -77,8 +77,14 @@ $data = array_reverse($data);
         ?>
 
 <script>
-    var iable2 = "<a href=\"Logout\" data-ajax=\"false\" class=\"perfil ui-btn ui-corner-all ui-icon-action ui-btn-icon-notext\">Menu</a>";
+    var iable2 = "<a id=\"salir\"  data-ajax=\"false\" class=\"perfil ui-btn ui-corner-all ui-icon-action ui-btn-icon-notext\">Menu</a>";
     $("#header").append(iable2);
     $("#header h1").css("margin", "0 2%");
     $("#header h1").css("text-align", "left");
+    
+    $("#salir").on('click',function(){
+        localStorage.clear();
+        window.location.href = "Logout";
+    });
+    
 </script>

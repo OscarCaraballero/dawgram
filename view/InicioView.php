@@ -1,5 +1,3 @@
-<?php var_dump($_SESSION) ?>
-
 <?php foreach ($data as $img): ?>
 
     <div class="grid-100 mobile-grid-100">
