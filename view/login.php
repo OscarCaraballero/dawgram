@@ -22,7 +22,7 @@ if (isset($_SESSION['msg'])) {
         -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
-        <base href="http://192.168.1.37/Dawgram/">
+        <base href="http://10.22.143.225/Dawgram/">
         <link rel="stylesheet" type="text/css" href="view/css/unsemantic-grid-mobile.css">
         <link rel="stylesheet" type="text/css" href="view/css/dawgram.min.css">
         <link rel="stylesheet" type="text/css" href="view/css/jquery.mobile.icons.min.css">
