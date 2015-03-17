@@ -63,6 +63,7 @@ class UploadController extends Controller {
                     "path" => $target_file,
                     "pathThumb" => $target_thub_file
                 ]);
+                
                 $this->_view->render($target_file);
             } else {
                 echo "Sorry, there was an error uploading your file.";

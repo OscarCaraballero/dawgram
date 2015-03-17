@@ -1,5 +1,6 @@
 <?php
-
+require 'libs/autoCache.php';
+autoCache(); 
 
 ?>
 

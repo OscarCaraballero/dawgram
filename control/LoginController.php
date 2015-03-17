@@ -26,6 +26,8 @@ class LoginController extends Controller{
                     $_SESSION['id'] = $id;
                     $_SESSION['filter'] = array();
                     $_SESSION['count'] = 0;
+                    require 'libs/autoCache.php';
+                    autoCache(); 
                     header("Location: Inicio");
                 }else{
                     header("Location: /Dawgram");
@@ -41,6 +43,8 @@ class LoginController extends Controller{
                 $_SESSION['id'] = $user[0]['id'];
                 $_SESSION['filter'] = array();
                 $_SESSION['count'] = 0;
+                require 'libs/autoCache.php';
+                autoCache(); 
                 header("Location: Inicio");
             }else{
                 array_push($errorMsg, "El usuario/contraseña no son los correctos.");
